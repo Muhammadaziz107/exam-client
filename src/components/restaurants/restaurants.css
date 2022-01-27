@@ -1,0 +1,25 @@
+.restaurants {
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.restaurants__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurants__link {
+  text-decoration: none;
+}
+.restaurants__text {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: black;
+}

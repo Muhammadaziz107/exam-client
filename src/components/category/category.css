@@ -1,0 +1,21 @@
+.categories {
+  width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.category__wrapper {
+  display: flex;
+}
+.categories__link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.categories__text {
+  font-size: 30px;
+  text-transform: uppercase;
+}

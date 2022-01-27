@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+
+//pages
+import Home from "./pages/home/home";
+import Login from "./pages/login/login";
+import Register from "./pages/register/register";
+import Category from "./components/category/category";
+import Restaurants from "./components/restaurants/restaurants";
+import Products from "./components/products/products";
+
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 function App() {
+  let navigate = useNavigate();
+
+  const token = window.localStorage.getItem("token");
+
+  useEffect(() => {
+    if (token) {
+      navigate("/");
+    } else {
+      navigate("/login");
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div></div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/:categoryId" element={<Restaurants />} />
+        <Route path="/restaurant/:restaurantId" element={<Products />} />
+      </Routes>
+    </>
   );
 }
 
