@@ -17,3 +17,65 @@
   font-size: 20px;
   margin-left: 10px;
 }
+
+.orders {
+  background-color: rgb(35, 41, 44);
+  padding: 10px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal--active {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  height: 50px;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.form__heading {
+  text-align: center;
+}
+
+.form__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: -20px;
+}
+
+.form__send {
+  width: 200px;
+  background-color: rgb(35, 41, 44);
+  padding: 10px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
